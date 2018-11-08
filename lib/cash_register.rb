@@ -26,4 +26,6 @@ class CashRegister
   def items
     @items.flatten
   end
+
+  def void_last_transaction
 end
