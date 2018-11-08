@@ -12,6 +12,6 @@ class CashRegister
   end
 
   def apply_discount
-    @total *= (80.to_f/100).to_i
+    @total *= (80.to_f/100)
   end
 end
