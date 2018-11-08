@@ -9,7 +9,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity=1)
-    (@items << title) * quantity
+    @items << [title] * quantity
     @total += price * quantity
   end
 
@@ -24,6 +24,6 @@ class CashRegister
   end
 
   def items
-    @items
+    @items.flatten
   end
 end
