@@ -12,6 +12,7 @@ class CashRegister
   end
 
   def apply_discount
+    require 'pry'; binding.pry
     @total *= (80/100)
   end
 end
